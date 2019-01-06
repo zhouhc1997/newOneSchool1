@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Im.PublicServiceActivity">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/id_conversation_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="17dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/backblack" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="公众号"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eee"
+            android:layout_gravity="bottom"></View>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="抱歉，此功能暂未开通！"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>

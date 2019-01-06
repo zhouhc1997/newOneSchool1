@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <com.qinhu.oneschool.MyClass.PickerView
+            android:id="@+id/id_pickerview_year"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="年"/>
+
+        <com.qinhu.oneschool.MyClass.PickerView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/id_pickerview_month"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="月"/>
+
+        <com.qinhu.oneschool.MyClass.PickerView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/id_pickerview_day"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="日"/>
+
+    </LinearLayout>
+</LinearLayout>

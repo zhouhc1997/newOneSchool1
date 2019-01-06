@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/update_btn">
+
+        <ImageView
+            android:id="@+id/id_conversation_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:maxEms="6"
+            android:ellipsize="end"
+            android:text="袁哲"/>
+
+        <ImageView
+            android:id="@+id/id_conversation_information"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:paddingBottom="14dp"
+            android:paddingTop="18dp"
+            android:src="@drawable/user" />
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+    <fragment
+        android:id="@+id/conversation"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <View
+            android:id="@+id/id_mheader_top"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/id_mheader_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/backblack"
+            android:padding="17dp"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/id_mheader_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            tools:text="标题"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/id_mheader_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/id_mheader_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆角矩形TextView -->
+    <declare-styleable name="ShapeCornerBgView">
+        <attr name="appBorder" format="boolean" />
+        <!-- 是否有边框 -->
+        <attr name="appBorderWidth" format="dimension" />
+        <!-- 边框线条的粗细 -->
+        <attr name="appBorderColor" format="color" />
+        <!-- 边框线条的颜色 -->
+        <attr name="appBgColor" format="color" />
+        <!-- 背景的颜色 -->
+        <attr name="appRadius" format="dimension" />
+        <!-- 圆角度数 -->
+        <attr name="appTopLeftCorner" format="boolean" />
+        <!-- 是否有圆角，默认，真 -->
+        <attr name="appBottomLeftCorner" format="boolean" />
+        <!-- 是否有圆角，默认，真 -->
+        <attr name="appTopRightCorner" format="boolean" />
+        <!-- 是否有圆角，默认，真 -->
+        <attr name="appBottomRightCorner" format="boolean" />
+        <!-- 是否有圆角，默认，真 -->
+    </declare-styleable>
+
+    <!--圆图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <!--文字高亮-->
+    <declare-styleable name="SignKeyWordTextView">
+        <attr name="signText" format="string"/>
+        <attr name="signTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SampleCircleImageView">
+        <!-- 源图片 -->
+        <attr name="src" format="reference"></attr>
+        <!-- 圆角大小 -->
+        <attr name="radius" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="image_radius" format="dimension" />//圆角大小
+        <attr name="image_shadow_radius" format="dimension" />//阴影大小
+        <attr name="image_circle" format="boolean" />//是否圆形
+        <attr name="image_shadow" format="boolean" />//是否阴影
+        <attr name="shadow_color" format="integer"/>//阴影颜色
+    </declare-styleable>
+
+
+</resources>

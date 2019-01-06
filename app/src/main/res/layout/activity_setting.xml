@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mine.SettingActivity">
+
+    <include layout="@layout/mheader"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/id_setting_changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tv_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="17dp"
+                android:src="@drawable/rightthin"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_setting_notifybox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/tv_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="推送通知"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="17dp"
+                android:src="@drawable/rightthin"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_setting_cachebox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tv_bg_selector"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/id_setting_cachesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:text="0M"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="17dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                android:src="@drawable/rightthin"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+            android:id="@+id/id_setting_layoutbnt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="30dp"
+            app:appBgColor="#f00"
+            app:appRadius="5dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="退出当前登录"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

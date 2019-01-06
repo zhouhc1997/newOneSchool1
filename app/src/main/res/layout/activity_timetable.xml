@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_timetable_weekbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_timetable_changeweek"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/handle"/>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="修改当前周"
+                        android:textColor="#1DD49C"
+                        android:textSize="10sp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:id="@+id/id_timetable_hs"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/id_timetable_weeklayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"/>
+
+                </HorizontalScrollView>
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/line_v"/>
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        <!--第一行  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+             <ImageView
+                 android:id="@+id/id_timetable_background"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:scaleType="centerCrop"/>
+             <LinearLayout
+                android:id="@+id/weekLine"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                 android:background="#11ffffff"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:id="@+id/blankTextView"
+                    android:layout_weight="0.7" />
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="7"
+                     android:orientation="vertical">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:id="@+id/week1"
+                             android:gravity="bottom|center_horizontal"
+                             android:textStyle="bold"
+                             android:text="周一" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week2"
+                             android:textStyle="bold"
+                             android:text="周二" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week3"
+                             android:textStyle="bold"
+                             android:text="周三" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week4"
+                             android:textStyle="bold"
+                             android:text="周四" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week5"
+                             android:textStyle="bold"
+                             android:text="周五" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week6"
+                             android:textStyle="bold"
+                             android:text="周六" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="bottom|center_horizontal"
+                             android:id="@+id/week0"
+                             android:textStyle="bold"
+                             android:text="周日" />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="0dp"
+                         android:layout_weight="0.8">
+
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:id="@+id/day1"
+                             android:gravity="center"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-24" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day2"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-25" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day3"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-26" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day4"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-27" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day5"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-28" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day6"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-29" />
+                         <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:gravity="center"
+                             android:id="@+id/day0"
+                             android:textSize="12sp"
+                             android:textColor="@color/text_75"
+                             tools:text="12-30" />
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+            </LinearLayout>
+
+             <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:layout_marginTop="45dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/bodyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/number_column_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4" />
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/id_timetable_week7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/id_mheader_top"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/white"/>
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/id_timetable_backbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="16dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/backblack"/>
+
+            <LinearLayout
+                android:id="@+id/id_timetable_selectweek"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/weekTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="第1周"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/id_timetable_weekimg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:padding="2dp"
+                        android:src="@drawable/down"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/id_timetable_dqxq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15sp"
+                    android:gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:textColor="#aaa"
+                    android:textStyle="bold"
+                    android:text="2018-2019-1"/>
+
+
+                <LinearLayout
+                    android:id="@+id/id_timetable_backweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="2dp"
+                        app:appRadius="4dp"
+                        app:appBgColor="@color/selected"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/selected"
+                        android:text="返回当前周"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_timetable_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="right|bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/setting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textSize="14sp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="设置" />
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

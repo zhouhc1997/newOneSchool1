@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="blue">#b7f9fe</color>
+    <color name="colorWHITE">#fff</color>
+    <color name="colordark">#a0000000</color>
+    <color name="colorTheme">#000000</color>
+    <color name="noColor">#00000000</color>
+    <color name="color_text_black">#333333</color>
+    <color name="color_text_ccc">#cccccc</color>
+    <color name="btn_dialog_negative_normal">#ff0000</color>
+    <color name="btn_dialog_negative_pressed">#bf0000</color>
+    <color name="btn_dialog_positive_normal">#368bff</color>
+    <color name="btn_dialog_positive_pressed">#0067f3</color>
+
+    <color name="progress_text">#f0f</color>
+    <color name="tablegray">#d6eeeeee</color>
+    <color name="tablehong">#d6fe3bbb</color>
+    <color name="tableyellow">#d6ffed76</color>
+    <color name="tableblue">#d62cfff3</color>
+    <color name="tablezi">#d6fbbaf5</color>
+    <color name="tablegreen">#d628fe28</color>
+    <color name="tablered">#d6f6baba</color>
+    <color name="tablebluedark">#d66977fb</color>
+    <color name="tableorange">#FDAB35</color>
+
+    <color name="c8c8c8">#C8C8C8</color>
+
+    <color name="black_textview">#575757</color>
+
+    <color name="group_list_black_textview">#353535</color>
+
+    <color name="group_list_gray">#999999</color>
+
+    <color name="group_list_liner">#e4e4e4</color>
+
+    <color name="main_title_backgroud">#F2F2F2</color>
+
+    <color name="main_regist">#ffffff</color>
+
+    <color name="button_backgroud">#0195ff</color>
+
+    <color name="de_title_bg">#0195ff</color>
+
+    <color name="seal_bg">#f0f0f6</color>
+
+    <color name="rc_text_color_secondary_inverse">@android:color/white</color>
+
+    <!--actionbar-->
+
+
+    <color name="de_actionbar_bg">#0195ff</color>
+
+    <!---->
+
+
+    <color name="de_action_color">#3498DB</color>
+
+    <color name="de_action_white">@android:color/white</color>
+
+    <color name="de_transparent">#00000000</color>
+
+    <color name="de_draft_color">#cb120f</color>
+
+    <color name="main_theme_color">#0195ff</color>
+
+    <color name="press">#e8e8e8</color>
+
+    <color name="text_line_color">#dfdfdd</color>
+
+    <color name="text_black_color">#333333</color>
+
+    <color name="text_tips_color">#666666</color>
+
+    <color name="mine_head_color">#cccccc</color>
+
+    <color name="text_color">#353535</color>
+
+    <!--SWITCH-->
+
+
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+
+    <color name="ksw_md_solid_shadow">#33000000</color>
+
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+    <color name="ac_filter_string_color">#0099ff</color>
+
+    <color name="cs_evaluate_dialog_divider">#eceef3</color>
+
+    <color name="cs_evaluate_bottom_text_backgroud">#0e8cea</color>
+
+    <color name="cs_evaluate_text_color">#3c4d65</color>
+
+    <color name="cs_evaluate_text_border">#B4BDCB</color>
+
+    <color name="cs_evaluate_text_border_hover">#91BCFF</color>
+
+    <color name="cs_evaluate_text_selected">#4D8DF0</color>
+
+    <color name="cs_evaluate_text_unselected">#939DAB</color>
+
+    <color name="cs_evaluate_background_selected">#E3EEFF</color>
+
+    <color name="cs_evaluate_edittext_background">#f1f3f5</color>
+
+    <color name="cs_evaluate_edittext_textcolor">#939dab</color>
+
+        <!-- sport  -->
+
+    <color name="white2">#ffffffff</color>
+    <color name="layout_title">#66CCFF</color>
+    <color name="cancel_bg">#F4F4F4</color>
+    <color name="dialog_title">#323232</color>
+    <color name="sure_bg">#0084FE</color>
+    <color name="shape">#99FF99</color>
+    <color name="borderline">#F0F1FF</color>
+    <color name="select">#5CB85C</color>
+    <color name="line">#F4F4F4</color>
+    <color name="rank">#FFA8F9A8</color>
+    <color name="background">#9EFF18</color>
+    <color name="wordcolor">#FAFFF4</color>
+
+
+    <color name="black">#000000</color>
+
+
+
+    <color name="logoColor">#6EC9ED</color>
+    <color name="logoDark">#C7C8CB</color>
+
+    <color name="text_75">#757575</color>
+
+
+    <color name="selected">#36d5b8</color>
+
+    <color name="no_selected">#cfd0d5</color>
+
+    <color name="liner_eee">#eeeeee</color>
+
+
+
+</resources>

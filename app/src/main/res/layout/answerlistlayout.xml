@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.qinhu.oneschool.MyClass.CircleImageView
+            android:id="@+id/id_answerlist_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/schoollogo"/>
+
+            <TextView
+                android:id="@+id/id_answerlist_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:gravity="bottom"
+                android:text="致命守护者"
+                android:layout_marginLeft="55dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/id_answerlist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="2018/12/6"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="55dp"
+                android:textSize="11sp" />
+
+            <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+                android:id="@+id/id_answerlist_agree"
+                android:layout_width="45dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="15dp"
+                app:appBgColor="@color/selected"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:appRadius="5dp"
+                android:text="采纳"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_answerlist_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"/>
+
+</LinearLayout>

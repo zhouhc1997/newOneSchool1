@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">一校</string>
+
+    <string name="home">首页</string>
+    <string name="message">消息</string>
+    <string name="study">学习</string>
+    <string name="mine">我的</string>
+
+
+    <string name="version_name">当前版本号为：</string>
+    <string name="can_not_find_version_name">抱歉，没有发现当前版本号</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

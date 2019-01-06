@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/update_btn">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:text="消息"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/id_message_friendlist"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:text="联系人"
+            android:textSize="14sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/white"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <fragment
+        android:id="@+id/subconversationlist"
+        android:name="io.rong.imkit.fragment.SubConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

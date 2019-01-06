@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qinhu.oneschool">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 分享 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/oneschoollogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home.GradesActivity" />
+        <activity android:name=".Public.WebViewActivity" />
+        <activity android:name=".Home.Question.QuestionActivity" />
+        <activity android:name=".Home.Question.AllAnswerActivity" />
+        <activity android:name=".Home.Question.QuestionPunishActivity" />
+        <activity android:name=".Home.Question.QuestionDetailActivity" />
+        <activity android:name=".Home.Question.WriteAnswerActivity" />
+        <activity android:name=".Home.Question.QuestionSearchActivity" />
+        <activity android:name=".Home.Money.MoneyActivity" />
+        <activity android:name=".Home.Timetable.TimetableActivity" />
+        <activity android:name=".Home.Timetable.TimetableSettingActivity" />
+        <activity android:name=".Home.SchoolNewsActivity" />
+        <activity android:name=".Public.SearchActivity" />
+        <activity android:name=".Mine.ComplieActivity" />
+        <activity android:name=".Mine.SettingActivity" />
+        <activity android:name=".Mine.SafeActivity" />
+        <activity android:name=".Mine.VerifyPhoneActivity" />
+        <activity android:name=".Public.UserActivity" />
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".BeforeRegisterActivity"/>
+        <activity android:name=".Public.TodayActivity" />
+        <activity android:name=".Mine.VersionActivity" />
+        <activity android:name=".Mine.FeedbackActivity" />
+        <activity android:name=".Im.AddActivity" />
+        <activity android:name=".Im.FriendListActivity" />
+        <activity android:name=".Im.GroupListActivity" />
+        <activity android:name=".Im.NewFriendListActivity" />
+        <activity android:name=".Im.PublicServiceActivity" />
+        <activity android:name=".Im.ResetBeizhuActivity" />
+        <activity
+            android:name=".Im.ConversationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.qinhu.oneschool"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Im.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.qinhu.oneschool"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.qinhu.oneschool"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.UpdateDateService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Service.UpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".LaunchActivity"></activity>
+    </application>
+
+</manifest>

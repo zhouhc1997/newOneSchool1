@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qinhu.oneschool.MyClass.DeletableEditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:textColor="#111"
+    android:autoLink="all"
+    android:textCursorDrawable="@drawable/cursor_shape"/>

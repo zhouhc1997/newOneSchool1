@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/id_mheader_top"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/id_mheader_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/backblack"
+            android:padding="17dp"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/id_mheader_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            tools:text="成绩查询"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/id_grades_loginbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/oneschoollogo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/inbox">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="学期" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:textSize="16dp"
+                    android:hint="2017-2018-2"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></View>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="3"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/inbox">
+
+                <EditText
+                    android:id="@+id/id_grades_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:hint="验证码"
+                    android:textColorHint="#ddd"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:background="#00000000" />
+
+                <ImageView
+                    android:id="@+id/id_grades_codeimg"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></View>
+
+            <TextView
+                android:id="@+id/id_grades_err"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:layout_weight="6"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                tools:text="错误"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fc6262"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+                android:id="@+id/id_grades_loginbutton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:layout_gravity="center_vertical"
+                android:text="查     询"
+                android:gravity="center"
+                android:textColor="#fff"
+                app:appBgColor="@color/selected"
+                app:appRadius="25dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/gradeslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:divider="#00000000"
+        android:dividerHeight="5dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

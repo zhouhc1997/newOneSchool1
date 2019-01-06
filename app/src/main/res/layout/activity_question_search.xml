@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.Question.QuestionSearchActivity">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white">
+
+        <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+            android:id="@+id/id_question_searchbtn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:appBgColor="#eee"
+            app:appRadius="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="#bbb"
+            android:paddingLeft="30dp"
+            android:clickable="true"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/noColor"
+            android:hint="搜索"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_grade"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_gravity="bottom|end"
+                android:textColor="#ccc"
+                android:textStyle="bold" />
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+</LinearLayout>

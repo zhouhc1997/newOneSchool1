@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <FrameLayout
+        android:id="@+id/id_tablebox_liner"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:paddingLeft="1px"
+        android:paddingRight="1px">
+
+        <TextView
+            android:id="@+id/id_tablebox_all"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+            android:id="@+id/id_tablebox_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:appBgColor="@color/noColor"
+            app:appRadius="5dp"
+            android:padding="3dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

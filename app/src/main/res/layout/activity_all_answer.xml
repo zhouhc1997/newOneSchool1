@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.Question.AllAnswerActivity">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/id_allanswer_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/reback"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="全部回答"
+            android:textColor="#BFBFBF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/liner_eee"
+            android:layout_gravity="bottom"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_allanswer_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Mine.FeedbackActivity">
+
+    <include layout="@layout/mheader"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/id_feedback_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请详细描述您的反馈意见"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/id_feedback_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:text="0/200" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/liner_eee"/>
+    <GridView
+        android:id="@+id/id_feedback_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none"
+        android:gravity="center" />
+
+    <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+            android:id="@+id/id_feedback_punish"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            app:appRadius="5dp"
+            android:text="提交反馈"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:appBgColor="@color/liner_eee"/>
+
+</LinearLayout>

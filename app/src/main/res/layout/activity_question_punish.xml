@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.Question.QuestionPunishActivity">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/id_questionpunish_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/reback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="提问"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:textColor="#bbb"/>
+
+        <TextView
+            android:id="@+id/id_questionpunish_submitbtn"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="发布"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            android:textColor="#288CFF"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/liner_eee"
+            android:layout_gravity="bottom"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    <EditText
+        android:id="@+id/id_questionpunish_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:theme="@style/MyEditText"
+        android:hint="请输入您的问题" />
+
+
+
+
+</LinearLayout>

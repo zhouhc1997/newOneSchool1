@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/frienditem"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:orientation="horizontal"
+        android:paddingRight="12dp">
+
+        <com.qinhu.oneschool.MyClass.CircleImageView
+
+            android:id="@+id/frienduri"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="17dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rc_default_portrait" />
+
+        <TextView
+            android:id="@+id/friendname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="67dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLength="32"
+            android:text="加载中....."
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvagain"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="70dp"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#6E6F78"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvrefuse"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+
+            android:gravity="center"
+            android:text="忽略"
+            android:textColor="#cd2626"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvdelete"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="已删除"
+            android:textColor="#6E6F78"
+            android:textSize="18sp"
+            android:visibility="gone"
+             />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="16dp"
+        android:background="#ccc" />
+
+</LinearLayout>

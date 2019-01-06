@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/id_writeanswer_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/reback"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="写回答"
+            android:textColor="#BFBFBF"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            android:gravity="center"/>
+
+        <com.qinhu.oneschool.MyClass.ShapeCornerBgView
+            android:id="@+id/id_writeanswer_submitbtn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:text="发表"
+            app:appBgColor="@color/selected"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom|end"
+            app:appRadius="5dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/liner_eee"
+            android:layout_gravity="bottom"/>
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <!-- 富文本编辑器 -->
+    <com.qinhu.oneschool.Home.Question.RichTextEditor
+        android:id="@+id/richEditor"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_above="@+id/title"
+        android:background="#fff" />
+
+    <!-- 底部的按钮 -->
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/button1"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/schoollogo"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

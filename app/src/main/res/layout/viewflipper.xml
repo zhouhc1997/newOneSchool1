@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_viewflipper_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="5dp"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:maxEms="17"
+    android:textSize="13sp" />
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tv_bg_selector"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+        android:id="@+id/id_questionlist_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请问一下青山校区图书馆开馆时间？"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="暂无采纳"/>
+
+        <ViewStub
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/agree_answerlayout"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="6dp"
+                android:src="@drawable/zan"/>
+
+            <TextView
+                android:id="@+id/id_questionlist_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:textColor="#dbdbdb"
+                android:text="10"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="8dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/recall"/>
+
+            <TextView
+                android:id="@+id/id_questionlist_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="130dp"
+                android:textColor="#dbdbdb"
+                android:text="10"/>
+
+
+            <TextView
+                android:id="@+id/id_questionlist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textColor="#dbdbdb"
+                android:text="2018/12/6"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_gravity="bottom"
+        android:background="#daf7f7f7"/>
+
+
+</FrameLayout>

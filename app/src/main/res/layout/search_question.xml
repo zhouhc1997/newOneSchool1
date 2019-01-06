@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tv_bg_selector">
+
+    <com.qinhu.oneschool.MyClass.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_question"/>
+
+    <com.qinhu.oneschool.MyClass.SignKeyWordTextView
+        android:id="@+id/id_searchlayout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:background="@color/noColor"
+        android:textColor="#c4c4c4"
+        android:textSize="16sp"
+        app:signTextColor="#9976F2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/liner_eee"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>
